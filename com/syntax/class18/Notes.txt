@@ -1,0 +1,13 @@
+---------------------------------------------------------------
+Class Constructors and this keyword
+Constructor is very similar to a method. Methods may or may not return something but constructor always never return anything, not even void
+1) we use constructor to give initial values to feilds of class
+2)constructors always have same name as class name while methods can have any names
+Person{
+String name;
+String address;
+int age;
+String country;
+Person(){
+Syso("Inside the person class constructor this code will be executed automatically when we create  "
+}

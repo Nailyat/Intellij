@@ -1,0 +1,17 @@
+*** INSTANCE VARIABLES ***
+Instance variables which are declared outside a method, loop, constructor or a block of code, but inside a class
+w/o static keyword are called instance variables. We call them instatnce variables because for each object of that class
+a new copy of the variables is created in memory.
+We use an instance variables when a value is expected to change from object to object
+
+*** STATIC VARIABLES ***
+Instance variables with a static keyword are called static variables. They are called class level variables because
+their value stays same across all the objects and only one memory location is occupied from the main memory.
+We use a static variables when we have to share some data across all the objects or if data is same for all
+the objects. Mostly this data used as constant. As a good practice we should access them using the class name.
+
+
+*** LOCAL VARIABLES ***
+Local variables which are declared inside a method, loop, switch case or any block of code.
+We can not use static keyword with local variables. Local variablesoccupy the memory in computer for shortest period
+of time.
