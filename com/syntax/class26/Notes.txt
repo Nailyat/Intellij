@@ -1,0 +1,69 @@
+*** CASTING in non-primitives ***
+
+As we can convert primitive data types with the help of casting, we can do the same with non-primitives
+RULES:
+1) Parent class are considered bid data type in non-primitives
+2) We can store the object of a child class in a variable of type Parent
+
+Syntax
+class Parent{
+String name;
+void printName(){
+}
+}
+class Child extends Parent{
+void myOwnMethod(){
+}
+}
+class Tester{
+public static void main(String [] args){
+Parent parent =new Child(); //we can do above assignment but can't do the reverse
+Child child=new Parent(); // error
+}
+}
+
+*** Benefits of CASTING ***
++ We can achieve run time polymorphism using casting and method overriding;
++ We can store the objects of all the child classes in arrays or some other data structures;
++ We can write dynamic code to access all those objects and execute the same methods on different objects;
++ When we store a child class object in a parent type variable we can't call child's class specific methods;
++ If we want to call child's class method we can do so, but we have to cast that object first;
+It's called run time polymorphism/late binding.
+
+*** FINAL Keyword ***
+FINAL keyword with variables:
+1) If we use Final keyword with variables we can't change their values;
+2) If we use Final with method we can not override that method in child class;
+3) If we use Final with a class we can not inherit from that class;
+
+=========================================================================================================
+
+*** ABSTRACTION ***
+Abstraction is a process of hiding implementation details and only showing the functionality
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

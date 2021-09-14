@@ -1,20 +1,18 @@
 package com.syntax.repl;
 
-
-
 public class ReplChecking {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int z=2, sum=0;
 
-		while(z<9) {
+		StringBuffer sb=new StringBuffer("Hello Friends");
 
-		   z++;
+		System.out.println(sb.reverse());
 
-		   sum=sum+z;
+
+
+
+
 
 		}
 
-		System.out.print(sum);
-	}}
+		}

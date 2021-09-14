@@ -1,0 +1,45 @@
+*** Access Modifiers in Java ***
+1) Access modifiers are keywords in object-oriented languages that set the accessibility of classes, methods,
+fields. constructors.
+2) Keywords in Java to control the access of members of a class:
+- private
+- default
+- protected
+- public
+
+*** Private:
+We can only access that member inside that specific class
+We can not have more than one public classes inside a Java file, there should be a public class with same name as
+your file, otherwise you will get error.
+We can have any classes in one file, but only one can be public.
+In private class all the members having this access modifier can be accessed inside the same class only.
+
+*** Default
+Default access modifier is automatically applicable when we don't mention the same class and same package
+
+*** Protected
+Protected means all the members of a class are accessible within same class and package but if we need to
+access them outside the package we need to extend from that class but to access something public
+
+*** Public
+Public means all the members are accessible throughout the project
+
+============================================================================================
+*** CONSTRUCTOR ***
+Constructors are special block of code executed when we create the object of a class by writing
+new keyword and name of class with parenthesis.
+We mainly use constructor to initialize the fields of an object, but we can also put some code that we
+want to execute everytime someone is creating the object of that class
+
+Rules:
+1) No return type not even void
+2) Same name as class name
+3) We can have constructors with and w/o parameters
+4) Constructors don't participate in inheritance
+5) Constructors are automatically called when you create the object
+6) We can overload constructors (with different type and numbers of parameters)
+7) We can't use non access modifiers like static with constructors
+8) We can't override a constructor because they don't participate in inheritance
+9) If we are not creating a constructor Java creates a default zero argument constructor automatically
+
+

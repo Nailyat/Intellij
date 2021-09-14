@@ -1,0 +1,39 @@
+*** METHOD OVERRIDING ***
+Method overriding is a mechanism in Java through which child classes can provide their own behaviours with same
+method name as in parent class.
+Rules for overriding:
+1) there should be at least two classes with parent-child relationship
+2) method in child class must have same return type
+3) name of the method with parameters (signature of method) should be same
+4) those members of the class which do not participate in inheritance can not be overridden (for example constructors or
+private methods)
+5) the access level if the method or property can not be more restrictive (for example if method in parent class has
+ public modifier we can not change it to protected or default or private, but we can do the reverse)
+6) we can't override a static method, but we can redeclare that method in child class, it's just a different name,
+ the mechanism is same as non-static methods.
+7) it's also called dynamic polymorphism/late binding
+
+*** OVERLOADING                           VS          OVERRIDING ***
+Method return type does not matter        ||          Method return type matter
+Method signature should be different      ||          Method signature should be same
+Access modifiers don't matter             ||          Access modifiers matter
+Inheritance is not need                   ||          Inheritance is needed
+We can overload a constructor or          ||          We can't override a constructor or
+private method                            ||          private method
+
+
+
+We can store a child class object inside a parent class type variable, but we will only able to call those methods
+which are present in parent class.
+If we want to call the methods from child class we must first convert parent type variable to child type by using syntax:
+(ChildType)parentVar --> will convert it to child type, now we can call the specific methods from this child class.
+With the help of this casting we can create an array that can hold all the objects of all child classes of parent class
+and because of overriding all the methods have same name.
+Now we can execute all the methods from all the child classes with the help of an array w/o writing all the code manually.
+==========================================================================================================
+
+*** FINAL Keyword ***
+Final in Java means something is complete and don't need modifications.
+If we use final keyword with a variable we can't change the value of that variable.
+If we use it with methods no child class can override that method.
+If we use with class name no class can inherit from taht class.
